@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pegadas Pré-Moldados - Fabricação e venda de blocos de concreto, canaletas, pingadeiras e outros pré-moldados em Porangatu, Goiás. Qualidade e resistência para sua construção.">
+    <meta name="keywords"
+        content="blocos de concreto, pré-moldados, construção civil, Porangatu, Goiás, canaletas, pingadeiras, pavers, sextavados">
+    <meta name="author" content="Pegadas Pré-Moldados">
+    <meta property="og:title" content="Pegadas Pré-Moldados - Blocos de Concreto e Pré-Moldados">
+    <meta property="og:description"
+        content="Fabricação e venda de blocos de concreto e outros pré-moldados em Porangatu, Goiás. Qualidade garantida para sua obra.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pegadaspremoldados.com.br">
+    <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+
+    <title>Pegadas Pré-Moldados | Blocos de Concreto e Pré-Moldados em Porangatu-GO</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #d10a11;
+            --primary-hover: #b0080e;
+            --secondary-color: #333333;
+            --light-color: #f5f5f5;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--light-color);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-hover);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .whatsapp-float {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Custom classes for red theme */
+        .bg-primary {
+            background-color: var(--primary-color);
+        }
+
+        .bg-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .text-primary {
+            color: var(--primary-color);
+        }
+
+        .text-primary-hover:hover {
+            color: var(--primary-hover);
+        }
+
+        .border-primary {
+            border-color: var(--primary-color);
+        }
+
+        .divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 0 auto;
+        }
+
+        .advantages-section {
+            background-color: var(--primary-color);
+        }
+
+        .advantages-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .advantages-icon {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Pegadas%20Pré-Moldados"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl z-50 whatsapp-float"
+        aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="./images/icon.jpg" alt="Logo Pegadas Pré-Moldados" class="h-10">
+                <span class="text-xl font-bold text-gray-800">Pegadas Pré-Moldados</span>
+            </a>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-800 hover:text-primary font-medium">Início</a>
+                <a href="#sobre" class="text-gray-800 hover:text-primary font-medium">Sobre</a>
+                <a href="#produtos" class="text-gray-800 hover:text-primary font-medium">Produtos</a>
+                <a href="#vantagens" class="text-gray-800 hover:text-primary font-medium">Vantagens</a>
+                <a href="#contato" class="text-gray-800 hover:text-primary font-medium">Contato</a>
+            </nav>
+
+            <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento"
+                class="hidden md:block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transition duration-300">
+                Orçamento via WhatsApp
+            </a>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#inicio" class="text-gray-800 hover:text-primary font-medium">Início</a>
+                <a href="#sobre" class="text-gray-800 hover:text-primary font-medium">Sobre</a>
+                <a href="#produtos" class="text-gray-800 hover:text-primary font-medium">Produtos</a>
+                <a href="#vantagens" class="text-gray-800 hover:text-primary font-medium">Vantagens</a>
+                <a href="#contato" class="text-gray-800 hover:text-primary font-medium">Contato</a>
+                <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento"
+                    class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium text-center transition duration-300">
+                    Orçamento via WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate__animated animate__fadeIn">Qualidade e Resistência em
+                Pré-Moldados</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Fabricação e venda de blocos de concreto e outros
+                pré-moldados para sua construção em Porangatu e região.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento"
+                    class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> Fale Conosco
+                </a>
+                <a href="#produtos"
+                    class="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-lg font-bold text-lg transition duration-300">
+                    Nossos Produtos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre a Pegadas Pré-Moldados</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="./images/hero-banner.jpeg"
+                        alt="Fábrica Pegadas Pré-Moldados" class="rounded-lg shadow-xl shadow-black w-full h-auto object-cover">
+                </div>
+
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Nossa História</h3>
+                    <p class="text-gray-600 mb-4">Fundada em Porangatu, Goiás, a Pegadas Pré-Moldados se consolidou como
+                        referência na fabricação e venda de blocos de concreto e outros pré-moldados para construção
+                        civil.</p>
+                    <p class="text-gray-600 mb-6">Com anos de experiência no mercado, oferecemos produtos de alta
+                        qualidade que atendem às necessidades de construtoras, arquitetos e clientes finais que buscam
+                        materiais duráveis e resistentes para suas obras.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-check-circle text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Qualidade Garantida</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-truck text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Entrega Rápida</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-dollar-sign text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Preço Competitivo</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-headset text-primary"></i>
+                            </div>
+                            <span class="text-gray-700">Atendimento Personalizado</span>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20Pegadas%20Pré-Moldados"
+                        class="inline-block bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Produtos</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Conheça nossa linha completa de pré-moldados para sua
+                    construção</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <img src="./images/bloco9.jpg"
+                        alt="Blocos de Concreto 09x19x39" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bloco de Concreto 09x19x39</h3>
+                        <p class="text-gray-600 mb-4">Ideal para vedação e construção de paredes internas. Alta
+                            resistência e qualidade.</p>
+                        <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Bloco%20de%20Concreto%2009x19x39"
+                            class="inline-block bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded font-medium transition duration-300">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <img src="./images/bloco14.jpg"
+                        alt="Blocos de Concreto 14x19x39" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bloco de Concreto 14x19x39</h3>
+                        <p class="text-gray-600 mb-4">Perfeito para paredes externas, oferecendo maior resistência e
+                            isolamento térmico.</p>
+                        <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Bloco%20de%20Concreto%2014x19x39"
+                            class="inline-block bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded font-medium transition duration-300">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <img src="./images/bloco19.jpg"
+                        alt="Blocos de Concreto 19x19x39" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bloco de Concreto 19x19x39</h3>
+                        <p class="text-gray-600 mb-4">Excelente para estruturas que demandam maior resistência e
+                            durabilidade.</p>
+                        <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Bloco%20de%20Concreto%2019x19x39"
+                            class="inline-block bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded font-medium transition duration-300">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <img src="./images/canaleta.jpg"
+                        alt="Canaletas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Canaletas</h3>
+                        <p class="text-gray-600 mb-4">Perfeitas para drenagem e condução de águas pluviais em sua
+                            construção.</p>
+                        <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20Canaletas"
+                            class="inline-block bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded font-medium transition duration-300">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <img src="./images/pingadeira.jpg"
+                        alt="Pingadeiras" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Pingadeiras</h3>
+                        <p class="text-gray-600 mb-4">Proteja suas paredes contra infiltrações com nossas pingadeiras de
+                            alta qualidade.</p>
+                        <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20Pingadeiras"
+                            class="inline-block bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded font-medium transition duration-300">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300">
+                    <img src="./images/pezão.jpg"
+                        alt="Pavers e Sextavados" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Pavers e Sextavados</h3>
+                        <p class="text-gray-600 mb-4">Beleza e durabilidade para áreas externas, calçadas e jardins.</p>
+                        <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Pavers%20e%20Sextavados"
+                            class="inline-block bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded font-medium transition duration-300">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-6">Temos outros produtos disponíveis para atender sua necessidade.</p>
+                <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20conhecer%20todos%20os%20produtos%20da%20Pegadas%20Pré-Moldados"
+                    class="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-bold transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> Fale com Nossos Especialistas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="vantagens" class="py-16 advantages-section text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Por que Escolher a Pegadas Pré-Moldados?</h2>
+                <p class="text-xl max-w-2xl mx-auto">Conheça os diferenciais que fazem nossos produtos se destacarem no
+                    mercado</p>
+                <div class="w-20 h-1 bg-white mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="advantages-card p-6 rounded-lg">
+                    <div class="text-4xl mb-4 advantages-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Qualidade Garantida</h3>
+                    <p class="text-white text-opacity-80">Utilizamos matéria-prima de primeira linha e processos
+                        rigorosos de controle de qualidade.</p>
+                </div>
+
+                <div class="advantages-card p-6 rounded-lg">
+                    <div class="text-4xl mb-4 advantages-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Entrega Rápida</h3>
+                    <p class="text-white text-opacity-80">Frota própria para garantir que seus produtos cheguem no prazo
+                        combinado.</p>
+                </div>
+
+                <div class="advantages-card p-6 rounded-lg">
+                    <div class="text-4xl mb-4 advantages-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Preço Competitivo</h3>
+                    <p class="text-white text-opacity-80">Melhor custo-benefício da região, sem abrir mão da qualidade.
+                    </p>
+                </div>
+
+                <div class="advantages-card p-6 rounded-lg">
+                    <div class="text-4xl mb-4 advantages-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Atendimento Personalizado</h3>
+                    <p class="text-white text-opacity-80">Equipe especializada para te ajudar a escolher os melhores
+                        produtos para sua obra.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/5562984144138?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20os%20melhores%20preços"
+                    class="inline-block bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-bold transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> Solicite seu Orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">O que Nossos Clientes Dizem</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Comprei blocos para minha casa e fiquei impressionado com a
+                        qualidade. A entrega foi rápida e o atendimento excelente!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-300 rounded-full w-10 h-10 mr-3"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">João Silva</h4>
+                            <p class="text-sm text-gray-500">Construtor em Porangatu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Trabalho com construção há 15 anos e sempre que preciso de
+                        pré-moldados, a Pegadas é minha primeira opção. Produtos de alta qualidade."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-300 rounded-full w-10 h-10 mr-3"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Maria Oliveira</h4>
+                            <p class="text-sm text-gray-500">Arquiteta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Comprei pavers para o jardim da minha casa e o resultado ficou
+                        incrível. Recomendo a todos que buscam qualidade e bom preço."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-300 rounded-full w-10 h-10 mr-3"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carlos Souza</h4>
+                            <p class="text-sm text-gray-500">Cliente Final</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Estamos prontos para atender você e tirar todas suas
+                    dúvidas</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-red-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                    <p class="text-gray-600">Rua GO151, QD05 LT22 - Jardim Europa<br>Porangatu - GO,
+                                        76550-000</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-red-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Telefone/WhatsApp</h4>
+                                    <p class="text-gray-600">(62) 98414-4138</p>
+                                    <a href="https://wa.me/5562984144138" class="text-primary hover:underline">Clique
+                                        para conversar no WhatsApp</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-red-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Horário de Funcionamento</h4>
+                                    <p class="text-gray-600">Segunda a sábado, das 07h às 18h</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-red-100 p-3 rounded-full mr-4">
+                                    <i class="fab fa-instagram text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Instagram</h4>
+                                    <a href="https://instagram.com/pegadaspremoldados" target="_blank"
+                                        class="text-primary hover:underline">@pegadaspremoldados</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Envie uma Mensagem</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                                <textarea id="message" name="message" rows="4"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-bold transition duration-300">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.23456789!2d-49.1234567!3d-13.2345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDE0JzA0LjQiUyA0OcKwMDcnMjQuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Mapa da localização da Pegadas Pré-Moldados"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Pegadas Pré-Moldados</h3>
+                    <p class="text-gray-400">Fabricação e venda de blocos de concreto e outros pré-moldados em
+                        Porangatu, Goiás.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Produtos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#produtos" class="text-gray-400 hover:text-white transition duration-300">Blocos de
+                                Concreto</a></li>
+                        <li><a href="#produtos"
+                                class="text-gray-400 hover:text-white transition duration-300">Canaletas</a></li>
+                        <li><a href="#produtos"
+                                class="text-gray-400 hover:text-white transition duration-300">Pingadeiras</a></li>
+                        <li><a href="#produtos"
+                                class="text-gray-400 hover:text-white transition duration-300">Pavers</a></li>
+                        <li><a href="#produtos"
+                                class="text-gray-400 hover:text-white transition duration-300">Sextavados</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white transition duration-300">Início</a>
+                        </li>
+                        <li><a href="#sobre" class="text-gray-400 hover:text-white transition duration-300">Sobre</a>
+                        </li>
+                        <li><a href="#produtos"
+                                class="text-gray-400 hover:text-white transition duration-300">Produtos</a></li>
+                        <li><a href="#vantagens"
+                                class="text-gray-400 hover:text-white transition duration-300">Vantagens</a></li>
+                        <li><a href="#contato"
+                                class="text-gray-400 hover:text-white transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                            <span class="text-gray-400">Rua GO151, QD05 LT22, Porangatu-GO</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-gray-400"></i>
+                            <a href="tel:+5562984144138"
+                                class="text-gray-400 hover:text-white transition duration-300">(62) 98414-4138</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-2 text-gray-400"></i>
+                            <a href="https://wa.me/5562984144138"
+                                class="text-gray-400 hover:text-white transition duration-300">WhatsApp</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-instagram mr-2 text-gray-400"></i>
+                            <a href="https://instagram.com/pegadaspremoldados" target="_blank"
+                                class="text-gray-400 hover:text-white transition duration-300">@pegadaspremoldados</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2020 Pegadas Pré-Moldados. Todos os direitos reservados.
+                    <br>Desenvolvido por <a href="https://www.luandev.blog.br/" target="_blank"
+                        class="text-primary">Luan Dev</a></p>
+
+                <div class="flex space-x-4">
+                    <a href="https://facebook.com" target="_blank"
+                        class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/pegadaspremoldados" target="_blank"
+                        class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5562984144138" target="_blank"
+                        class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Create WhatsApp message
+            const whatsappMessage = `Olá, meu nome é ${name}. ${message}%0A%0ATelefone: ${phone}%0AE-mail: ${email || 'Não informado'}`;
+
+            // Redirect to WhatsApp
+            window.location.href = `https://wa.me/5562984144138?text=${whatsappMessage}`;
+        });
+
+        // Scroll animations
+        window.addEventListener('scroll', function () {
+            const elements = document.querySelectorAll('.product-card, .animate-float');
+
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        });
+    </script>
+    <script src="./scripts/animation.js"></script>
+</body>
+
+</html>
