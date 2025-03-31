@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // 3. Verifica se há arquivos
         if (!files || files.length === 0) {
-            container.innerHTML = "<p class='text-gray-500'>Nenhum arquivo encontrado.</p>";
+            container.innerHTML = "<p class='text-gray-500'>Nenhum arquivo encontrado para a galeria.</p>";
             return;
         }
 
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.error("Erro ao carregar os arquivos:", error);
         container.innerHTML = `
             <p class='text-red-500 p-4 bg-red-50 rounded'>
-                Erro ao carregar arquivos: ${error.message}
+                Erro ao carregar arquivos da galeria!: ${error.message}
             </p>
         `;
     }
