@@ -40,6 +40,10 @@
             background-color: var(--light-color);
         }
 
+        body * {
+            animation: slideUp .5s ease-in-out forwards;
+        }
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
@@ -180,6 +184,7 @@
                 <a href="#inicio" class="text-gray-800 hover:text-primary font-medium">Início</a>
                 <a href="#sobre" class="text-gray-800 hover:text-primary font-medium">Sobre</a>
                 <a href="#produtos" class="text-gray-800 hover:text-primary font-medium">Produtos</a>
+                <a href="#galeria" class="text-gray-800 hover:text-primary font-medium">Galeria</a>
                 <a href="#vantagens" class="text-gray-800 hover:text-primary font-medium">Vantagens</a>
                 <a href="#contato" class="text-gray-800 hover:text-primary font-medium">Contato</a>
             </nav>
@@ -397,6 +402,23 @@
                     class="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-bold transition duration-300">
                     <i class="fab fa-whatsapp mr-2"></i> Fale com Nossos Especialistas
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section id="galeria" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossa Galeria</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Veja um pouco sobre o nosso trabalho e entregas para clientes.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div id="container_galeria" class="flex justify-center items-center">
+
+
+
             </div>
         </div>
     </section>
@@ -641,7 +663,7 @@
     <!-- Map Section -->
     <div class="h-96 w-full">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.23456789!2d-49.1234567!3d-13.2345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDE0JzA0LjQiUyA0OcKwMDcnMjQuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3880.0607075214034!2d-49.17039216194742!3d-13.47035543850406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93411190c721adbd%3A0x473b5b7518f48eee!2sPEGADAS%20PR%C3%89-MOLDADOS!5e0!3m2!1spt-BR!2sbr!4v1743419865110!5m2!1spt-BR!2sbr"
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             aria-label="Mapa da localização da Pegadas Pré-Moldados"></iframe>
@@ -775,8 +797,14 @@
                 }
             });
         });
+
+        document.addEventListener('DOMContentLoaded', ()=> {
+            setTimeout(()=> {
+                window.scrollTo(0, 0);
+            }, 500);
+        });
     </script>
-    <script src="./scripts/animation.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
