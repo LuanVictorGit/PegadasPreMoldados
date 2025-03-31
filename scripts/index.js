@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     } catch (error) {
         console.error("Erro ao carregar os arquivos:", error);
-        container.innerHTML = "<p>Erro ao carregar arquivos.</p>";
+        container.innerHTML = "<p class='text-red-500'>Erro ao carregar arquivos.</p>";
     }
 });
